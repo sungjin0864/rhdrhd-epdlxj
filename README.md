@@ -18,3 +18,13 @@ This data app shows a simple demonstration of an interactive data explorer that 
 
 - [TMDB 5000 Movie Dataset](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata)
   
+
+## Gon-style Digit Recognition
+
+This repository also includes `recognize_gon_digits.py`, a simple example of recognizing handwritten digits and arithmetic symbols without using AI models. The script uses OpenCV-based template matching. To run the script, supply a folder that contains images of single characters:
+
+```bash
+python recognize_gon_digits.py <image_folder>
+```
+
+Each file in the folder should contain a single digit (0-9) or operator (`+`, `-`, `*`, `/`). The script generates simple font-based templates and finds the closest match to each image.
